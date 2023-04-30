@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		670D9911297F41BA00385643 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670D9910297F41BA00385643 /* AppDelegate.swift */; };
+		670D9913297F41BA00385643 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670D9912297F41BA00385643 /* SceneDelegate.swift */; };
+		670D9915297F41BA00385643 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670D9914297F41BA00385643 /* ViewController.swift */; };
+		670D991A297F41BC00385643 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 670D9919297F41BC00385643 /* Assets.xcassets */; };
+		670D991D297F41BC00385643 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 670D991B297F41BC00385643 /* LaunchScreen.storyboard */; };
+		670D9929297FF19600385643 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670D9928297FF19600385643 /* BaseView.swift */; };
+		670D992C297FF30B00385643 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670D992B297FF30B00385643 /* BaseViewController.swift */; };
+		67502457299183E2002A2E8F /* soft-awakening.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 67502456299183E2002A2E8F /* soft-awakening.mp3 */; };
+		67502459299401CC002A2E8F /* StartModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67502458299401CC002A2E8F /* StartModeView.swift */; };
+		6751B3F229831E4E00840318 /* Resourses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6751B3F129831E4E00840318 /* Resourses.swift */; };
+		6751B3F529831F5C00840318 /* BookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6751B3F429831F5C00840318 /* BookController.swift */; };
+		6751B3F9298321EE00840318 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6751B3F8298321EE00840318 /* TimerView.swift */; };
+		6751B3FB2983221A00840318 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6751B3FA2983221A00840318 /* Extentions.swift */; };
+		6751B3FE2983296900840318 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6751B3FD2983296900840318 /* ProgressView.swift */; };
+		6751B4002983297300840318 /* PersentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6751B3FF2983297300840318 /* PersentView.swift */; };
+		675FBCA62985BAFB00070F5A /* SetTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675FBCA52985BAFB00070F5A /* SetTimerView.swift */; };
+		67BC795B298D35F3002ADB12 /* TestSetTimeAlertContr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BC795A298D35F3002ADB12 /* TestSetTimeAlertContr.swift */; };
+		67C8A28F298944AA00E08BF7 /* CustomPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C8A28E298944A900E08BF7 /* CustomPickerView.swift */; };
+		67D5449A29FD859A00FB87DF /* TimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D5449929FD859A00FB87DF /* TimeModel.swift */; };
+		9C83B0ACED03E4C12715AF5D /* Pods_BookeTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5D3296D50CD4AE063B0E719 /* Pods_BookeTime.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		670D990D297F41BA00385643 /* BookeTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookeTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		670D9910297F41BA00385643 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		670D9912297F41BA00385643 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		670D9914297F41BA00385643 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		670D9919297F41BC00385643 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		670D991C297F41BC00385643 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		670D991E297F41BC00385643 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		670D9928297FF19600385643 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		670D992B297FF30B00385643 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		67502456299183E2002A2E8F /* soft-awakening.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "soft-awakening.mp3"; sourceTree = "<group>"; };
+		67502458299401CC002A2E8F /* StartModeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartModeView.swift; sourceTree = "<group>"; };
+		6751B3F129831E4E00840318 /* Resourses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resourses.swift; sourceTree = "<group>"; };
+		6751B3F429831F5C00840318 /* BookController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookController.swift; sourceTree = "<group>"; };
+		6751B3F8298321EE00840318 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		6751B3FA2983221A00840318 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		6751B3FD2983296900840318 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		6751B3FF2983297300840318 /* PersentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersentView.swift; sourceTree = "<group>"; };
+		675FBCA52985BAFB00070F5A /* SetTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTimerView.swift; sourceTree = "<group>"; };
+		67BC795A298D35F3002ADB12 /* TestSetTimeAlertContr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSetTimeAlertContr.swift; sourceTree = "<group>"; };
+		67C8A28E298944A900E08BF7 /* CustomPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerView.swift; sourceTree = "<group>"; };
+		67D5449929FD859A00FB87DF /* TimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeModel.swift; sourceTree = "<group>"; };
+		904B987C1BECA16A4C748DCD /* Pods-BookeTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookeTime.debug.xcconfig"; path = "Target Support Files/Pods-BookeTime/Pods-BookeTime.debug.xcconfig"; sourceTree = "<group>"; };
+		D5D3296D50CD4AE063B0E719 /* Pods_BookeTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookeTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F880A8FB78625282BA7C191C /* Pods-BookeTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookeTime.release.xcconfig"; path = "Target Support Files/Pods-BookeTime/Pods-BookeTime.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		670D990A297F41BA00385643 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C83B0ACED03E4C12715AF5D /* Pods_BookeTime.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CD6DABEDBB434B307AF3310 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				904B987C1BECA16A4C748DCD /* Pods-BookeTime.debug.xcconfig */,
+				F880A8FB78625282BA7C191C /* Pods-BookeTime.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		55D8AEBE36553D8EDEC2D080 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5D3296D50CD4AE063B0E719 /* Pods_BookeTime.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		670D9904297F41BA00385643 = {
+			isa = PBXGroup;
+			children = (
+				670D990F297F41BA00385643 /* BookeTime */,
+				670D990E297F41BA00385643 /* Products */,
+				0CD6DABEDBB434B307AF3310 /* Pods */,
+				55D8AEBE36553D8EDEC2D080 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		670D990E297F41BA00385643 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				670D990D297F41BA00385643 /* BookeTime.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		670D990F297F41BA00385643 /* BookeTime */ = {
+			isa = PBXGroup;
+			children = (
+				6751B3F029831E3600840318 /* Helpers */,
+				670D9927297FF18400385643 /* Base */,
+				6751B3EF29831E0300840318 /* Controllers */,
+				670D9924297F423C00385643 /* Aplications */,
+				6751B3EE29831D9F00840318 /* SupportingFiles */,
+			);
+			path = BookeTime;
+			sourceTree = "<group>";
+		};
+		670D9924297F423C00385643 /* Aplications */ = {
+			isa = PBXGroup;
+			children = (
+				670D9910297F41BA00385643 /* AppDelegate.swift */,
+				670D9912297F41BA00385643 /* SceneDelegate.swift */,
+			);
+			path = Aplications;
+			sourceTree = "<group>";
+		};
+		670D9927297FF18400385643 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				670D9928297FF19600385643 /* BaseView.swift */,
+				670D992B297FF30B00385643 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6750245329918073002A2E8F /* AlarmMelody */ = {
+			isa = PBXGroup;
+			children = (
+				67502456299183E2002A2E8F /* soft-awakening.mp3 */,
+			);
+			path = AlarmMelody;
+			sourceTree = "<group>";
+		};
+		6751B3EE29831D9F00840318 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				6750245329918073002A2E8F /* AlarmMelody */,
+				670D991E297F41BC00385643 /* Info.plist */,
+				670D991B297F41BC00385643 /* LaunchScreen.storyboard */,
+				670D9919297F41BC00385643 /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		6751B3EF29831E0300840318 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6751B3F6298321B400840318 /* Book */,
+				67502458299401CC002A2E8F /* StartModeView.swift */,
+				670D9914297F41BA00385643 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6751B3F029831E3600840318 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6751B3FC2983221D00840318 /* Extentions */,
+				6751B3F129831E4E00840318 /* Resourses.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6751B3F6298321B400840318 /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				6751B3F7298321D600840318 /* Timer */,
+				6751B3F429831F5C00840318 /* BookController.swift */,
+			);
+			path = Book;
+			sourceTree = "<group>";
+		};
+		6751B3F7298321D600840318 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				675FBCA42985BAE300070F5A /* SetTimerView */,
+				6751B3F8298321EE00840318 /* TimerView.swift */,
+				6751B3FD2983296900840318 /* ProgressView.swift */,
+				6751B3FF2983297300840318 /* PersentView.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		6751B3FC2983221D00840318 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				6751B3FA2983221A00840318 /* Extentions.swift */,
+				67D5449929FD859A00FB87DF /* TimeModel.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		675FBCA42985BAE300070F5A /* SetTimerView */ = {
+			isa = PBXGroup;
+			children = (
+				67C8A28E298944A900E08BF7 /* CustomPickerView.swift */,
+				675FBCA52985BAFB00070F5A /* SetTimerView.swift */,
+				67BC795A298D35F3002ADB12 /* TestSetTimeAlertContr.swift */,
+			);
+			path = SetTimerView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		670D990C297F41BA00385643 /* BookeTime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 670D9921297F41BC00385643 /* Build configuration list for PBXNativeTarget "BookeTime" */;
+			buildPhases = (
+				02C0F8061B07405F79B9A57D /* [CP] Check Pods Manifest.lock */,
+				670D9909297F41BA00385643 /* Sources */,
+				670D990A297F41BA00385643 /* Frameworks */,
+				670D990B297F41BA00385643 /* Resources */,
+				593C2052D53373D3345A65B7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BookeTime;
+			productName = BookeTime;
+			productReference = 670D990D297F41BA00385643 /* BookeTime.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		670D9905297F41BA00385643 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					670D990C297F41BA00385643 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 670D9908297F41BA00385643 /* Build configuration list for PBXProject "BookeTime" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 670D9904297F41BA00385643;
+			productRefGroup = 670D990E297F41BA00385643 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				670D990C297F41BA00385643 /* BookeTime */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		670D990B297F41BA00385643 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67502457299183E2002A2E8F /* soft-awakening.mp3 in Resources */,
+				670D991D297F41BC00385643 /* LaunchScreen.storyboard in Resources */,
+				670D991A297F41BC00385643 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02C0F8061B07405F79B9A57D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BookeTime-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		593C2052D53373D3345A65B7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BookeTime/Pods-BookeTime-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BookeTime/Pods-BookeTime-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BookeTime/Pods-BookeTime-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		670D9909297F41BA00385643 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6751B3F9298321EE00840318 /* TimerView.swift in Sources */,
+				675FBCA62985BAFB00070F5A /* SetTimerView.swift in Sources */,
+				6751B3FB2983221A00840318 /* Extentions.swift in Sources */,
+				670D9915297F41BA00385643 /* ViewController.swift in Sources */,
+				670D9929297FF19600385643 /* BaseView.swift in Sources */,
+				67C8A28F298944AA00E08BF7 /* CustomPickerView.swift in Sources */,
+				670D9911297F41BA00385643 /* AppDelegate.swift in Sources */,
+				6751B3F229831E4E00840318 /* Resourses.swift in Sources */,
+				670D9913297F41BA00385643 /* SceneDelegate.swift in Sources */,
+				6751B4002983297300840318 /* PersentView.swift in Sources */,
+				67D5449A29FD859A00FB87DF /* TimeModel.swift in Sources */,
+				6751B3F529831F5C00840318 /* BookController.swift in Sources */,
+				67502459299401CC002A2E8F /* StartModeView.swift in Sources */,
+				670D992C297FF30B00385643 /* BaseViewController.swift in Sources */,
+				6751B3FE2983296900840318 /* ProgressView.swift in Sources */,
+				67BC795B298D35F3002ADB12 /* TestSetTimeAlertContr.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		670D991B297F41BC00385643 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				670D991C297F41BC00385643 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		670D991F297F41BC00385643 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		670D9920297F41BC00385643 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		670D9922297F41BC00385643 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 904B987C1BECA16A4C748DCD /* Pods-BookeTime.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5434634X8A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BookeTime/SupportingFiles/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
+				NEW_SETTING1 = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "IOS-Kids.BookeTime";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		670D9923297F41BC00385643 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F880A8FB78625282BA7C191C /* Pods-BookeTime.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5434634X8A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BookeTime/SupportingFiles/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
+				NEW_SETTING1 = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "IOS-Kids.BookeTime";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		670D9908297F41BA00385643 /* Build configuration list for PBXProject "BookeTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				670D991F297F41BC00385643 /* Debug */,
+				670D9920297F41BC00385643 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		670D9921297F41BC00385643 /* Build configuration list for PBXNativeTarget "BookeTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				670D9922297F41BC00385643 /* Debug */,
+				670D9923297F41BC00385643 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 670D9905297F41BA00385643 /* Project object */;
+}
