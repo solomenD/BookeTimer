@@ -142,7 +142,6 @@ final class TimerView: BaseView {
            if timerProgress < Double(actualProgress)-1 {
                timerProgress = Double(actualProgress)+1
            }
-
            if self.timerProgress > self.workingTimerDuration {
                self.timerProgress = self.workingTimerDuration
                timer.invalidate()
@@ -191,7 +190,7 @@ final class TimerView: BaseView {
                 timers.invalidate()
                 self.stopTimer(mission: false)
                 completion(self.timerProgress)
-                restartgo = false
+//                restartgo = false
             }
 
 

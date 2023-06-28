@@ -8,10 +8,8 @@
 import RealmSwift
 import Foundation
 
-
 class TimeModel: Object {
     
-//    @Persisted var actualStartTime: Int = 0
     @objc dynamic var actualStartTime: Int = 0
     
 }

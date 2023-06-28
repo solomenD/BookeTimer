@@ -100,9 +100,8 @@ class TestSetTimeAlertContr: BaseView {
         targetView.setupView(backgroundView)
         targetView.setupView(alertView)
         
-        NSLayoutConstraint.activate([
-                
-                alertView.topAnchor.constraint(equalTo: targetView.topAnchor, constant: -400),
+            NSLayoutConstraint.activate([
+                alertView.centerYAnchor.constraint(equalTo: targetView.centerYAnchor),
                 alertView.leadingAnchor.constraint(equalTo: targetView.leadingAnchor, constant: 40),
                 alertView.trailingAnchor.constraint(equalTo: targetView.trailingAnchor, constant: -40),
                 alertView.heightAnchor.constraint(equalToConstant: 340),
@@ -145,21 +144,24 @@ class TestSetTimeAlertContr: BaseView {
                 repiatsPicer.leadingAnchor.constraint(equalTo: breakTimePicker.trailingAnchor, constant: 20),
                 repiatsPicer.trailingAnchor.constraint(equalTo: alertView.trailingAnchor, constant: -20),
                 repiatsPicer.heightAnchor.constraint(equalToConstant: 60),
-           
+                
             ])
 
         UIView.animate(withDuration: 0.3,animations: {
             self.backgroundView.alpha = Constant.backgruondAlpha
             self.viewController?.navigationItem.leftBarButtonItem?.customView?.alpha = 0.0
             self.viewController?.navigationItem.rightBarButtonItem?.customView?.alpha = 0.0
+        }, completion: { _ in
 
-        }, completion: { done in
-            if done {
                 UIView.animate(withDuration: 0.3, animations: {
-                    self.alertView.center = (self.viewController?.view.center)!
+                    self.alertView.center = targetView.center
                 })
-            }
         })
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [self] in
+            self.alertView.center = targetView.center
+
+        }
         
     }
     
@@ -185,8 +187,9 @@ class TestSetTimeAlertContr: BaseView {
                     self.backgroundView.alpha = 0
                 }, completion: { done in
                     if done {
+                        self.alertView.removeFromSuperview()
                         self.viewController?.viewDidLoad()
-
+                        
                     }
                 })
             }

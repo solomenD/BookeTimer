@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import AVFoundation
+import AVFAudio
 
 class BookController: BaseController {
     
@@ -24,7 +24,7 @@ class BookController: BaseController {
     
     func startSection() {
         
-        if timerView.workingTimerDuration > 0 {
+        if timerView.restartgo == false {
             timerView.startTimer { _ in
                 
                 print("work")
@@ -35,9 +35,11 @@ class BookController: BaseController {
                     self.audioPlayer?.play ()
                     if self.timerView.breakTimeDuration > 0 {
                         DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
+                            self.timerView.restartgo = true
                             self.timerView.restStartTime { _ in
                                 
                                 print("break")
+                                self.timerView.restartgo = false
                                 let pathToSound = Bundle.main.path(forResource: "soft-awakening", ofType: "mp3")!
                                 let url = URL(fileURLWithPath: pathToSound)
                                 do {
@@ -54,6 +56,7 @@ class BookController: BaseController {
                                     else {
                                         timerView.state = .isRuning
                                         currentRep += 1
+                                        
                                         startSection()
                                     }
                                 }
@@ -77,6 +80,7 @@ class BookController: BaseController {
             }
         } else {
             self.timerView.restStartTime { _ in
+                self.timerView.restartgo = false
                 print("break")
                 let pathToSound = Bundle.main.path(forResource: "soft-awakening", ofType: "mp3")!
                 let url = URL(fileURLWithPath: pathToSound)
@@ -103,41 +107,41 @@ class BookController: BaseController {
     var firtsStart: Bool = true
     
     override func navBarLeftButtontHandler() {
-        currentRep = 1
         breakTimeDuration = customAlert.breakTimeDuration
         self.timerView.breakTimeDuration = breakTimeDuration
         if timerView.state == .isStopped {
             if customAlert.workingTimeDuration > 0.0 || customAlert.breakTimeDuration > 0.0{
                 if timerView.timerProgress == 0 && firtsStart {
                     firtsStart = false
-//                    timerView.startTimer = Int(Date().timeIntervalSince1970)
+                    //                    timerView.startTimer = Int(Date().timeIntervalSince1970)
                     print("current time is \(timerView.currentTime)")
                 }
-                if timerView.restartgo {
-                    self.timerView.restStartTime { _ in
-                        print("break")
-                        let pathToSound = Bundle.main.path(forResource: "soft-awakening", ofType: "mp3")!
-                        let url = URL(fileURLWithPath: pathToSound)
-                        do {
-                            self.audioPlayer = try AVAudioPlayer (contentsOf: url)
-                            self.audioPlayer?.play ()
-                        }
-                        catch  {
-                            print(error)
-                        }
-                        // MARK: - Rekurtion
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
-                            //                            self.configureAppearance()
-                            if self.currentRep >= self.customAlert.reps {self.navBarRightButtontHandler()}
-                            else {
-                                self.currentRep += 1
-                                self.startSection()
-                            }
-                        }
-                    }
-                }else {
-                    startSection()
-                }
+                //                if timerView.restartgo {
+                //                    self.timerView.restStartTime { [self] _ in
+                //                        print("break")
+                //                        let pathToSound = Bundle.main.path(forResource: "soft-awakening", ofType: "mp3")!
+                //                        let url = URL(fileURLWithPath: pathToSound)
+                //                        do {
+                //                            self.audioPlayer = try AVAudioPlayer (contentsOf: url)
+                //                            self.audioPlayer?.play ()
+                //                        }
+                //                        catch  {
+                //                            print(error)
+                //                        }
+                //                        // MARK: - Rekurtion
+                //                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) { [self] in
+                ////                                                        self.configureAppearance()
+                //                            timerView.configure(withWorkeTime: customAlert.workingTimeDuration, or: true, progress: timerView.timerProgress)
+                //                            if currentRep >= self.customAlert.reps {navBarRightButtontHandler()}
+                //                            else {
+                //                                currentRep += 1
+                //                                startSection()
+                //                            }
+                //                        }
+                //                    }
+                //                }else {
+                startSection()
+                //                }
             } else {
                 timerView.pauseTimer()
             }
@@ -153,6 +157,7 @@ class BookController: BaseController {
     }
     
     override func navBarRightButtontHandler() {
+        currentRep = 1
         RealmManager.shared.deleteModel(model: timerView.startTimer)
         timerView.startTimer = 0
         firtsStart = true
